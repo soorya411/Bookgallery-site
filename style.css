@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+header{
+    background-color: rgba(11, 109, 129, 0.979);
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+}
+header h4{
+    color: antiquewhite;
+    padding: 15px;
+    text-align: left;
+}
+footer{
+    background-color: rgba(11, 109, 129, 0.976);
+    width: 100%;
+    height: 100%;
+   
+}
+#footer{
+    padding: 30px;
+    color: antiquewhite;
+    text-align: center;
+    
+}
+#copy{
+    margin-top:10px;
+    font-size: 12px;
+}
+section .banner{
+    height: 600px;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-image: url(https://img.freepik.com/premium-photo/row-old-books-green-shelf-horizontal-background-banner_118047-9575.jpg);
+    
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+h4{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: medium;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.col #btn{
+    width: 80px;
+    height: 25px;
+    background-color: white;
+    border:1px solid transparent ;
+    border-radius:10px;
+    padding-top: 5px 5px;
+    margin-left: 80px;
+    cursor: pointer;
+ }
+ #btn:hover{
+    color: azure;
+    background-color:rgba(11, 109, 129, 0.881);
+ 
+}
+.col{
+    background-color: rgba(104, 110, 111, 0.485);
+    width: 240px;
+    height: 400px;
+    margin: 40px;
+   
+    }
+.col img{
+    width: 150px;
+    height: 200px;
+    align-items: center;
+    margin: 45px 45px;
+    overflow: hidden;
+}
+img:hover{
+    transform: scale(1.3);
+
+
+}
+
+@media only screen and (max-width:480px){
+    header h4{
+        text-align: center;
+    }
+    /* section .banner{
+    
+        background-size: auto;
+
+    } */
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .col{
+        background-color: rgba(11, 109, 129, 0.976);
+        
+    }
+    
+    header{
+        z-index: 1;
+    }
+    #copy{
+        font-size: 8px;
+        margin-top: 30px;
+    }
+}
